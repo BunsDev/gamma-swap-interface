@@ -1,0 +1,9 @@
+.next
+yarn.lock
+package-lock.json
+node_modules
+migrations/
+.vercel
+*.dbg.json
+*DS_Store
+build-info
