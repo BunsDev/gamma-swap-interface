@@ -73,3 +73,8 @@ Gamma introduces an institution-grade DeFi borrowing and lending protocol featur
 Gamma has a secure, cross-chain bridge to facilitate interoperability between Fantom and other chains (such as Polygon). Currently, Gamma supports Fantom <=> Polygon Mumbai, with more chains being supported very soon. Bridging to and from non-EVM compatible networks is also possible with Gamma's unique bridging mechanism.
 
 [Try bridging assets from Fantom to Polygon Mumbai](https://gamma-fantom.vercel.app/bridge).
+
+
+# Notes:
+
+All contract addresses [are viewable here](https://github.com/lugadaug/gamma/blob/dev/src/constants/deployments.json).
