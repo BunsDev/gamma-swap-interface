@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SafeToken",
+  "sourceName": "contracts/vaults/SafeToken.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122053e675cdb14b91d8cfdc424d16cb6d6653a976e3632958344d0f9d6ecece64e464736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122053e675cdb14b91d8cfdc424d16cb6d6653a976e3632958344d0f9d6ecece64e464736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

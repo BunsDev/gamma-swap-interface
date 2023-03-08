@@ -1,0 +1,603 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GammaVaultStorage",
+  "sourceName": "contracts/vaults/GammaVault.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "targetAccount",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "assetBorrow",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "borrowBalanceAccumulated",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amountRepaid",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "liquidator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "assetCollateral",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amountSeized",
+          "type": "uint256"
+        }
+      ],
+      "name": "BorrowLiquidated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startingBalance",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newBalance",
+          "type": "uint256"
+        }
+      ],
+      "name": "BorrowRepaid",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startingBalance",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "borrowAmountWithFee",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newBalance",
+          "type": "uint256"
+        }
+      ],
+      "name": "BorrowTaken",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "equityAvailableBefore",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "EquityWithdrawn",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startingBalance",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newBalance",
+          "type": "uint256"
+        }
+      ],
+      "name": "SupplyOrgFeeAsAdmin",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startingBalance",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newBalance",
+          "type": "uint256"
+        }
+      ],
+      "name": "SupplyReceived",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startingBalance",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newBalance",
+          "type": "uint256"
+        }
+      ],
+      "name": "SupplyWithdrawn",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "_guardCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "borrowBalances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "principal",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "interestIndex",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "closeFactorMantissa",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "collateralMarkets",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "mantissa",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "liquidationDiscount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "mantissa",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "markets",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "isSupported",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "interestRateModel",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalSupply",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "supplyRateMantissa",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "supplyIndex",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalBorrows",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "borrowRateMantissa",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "borrowIndex",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "ibToken",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "marketsLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxLiquidationDiscountMantissa",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "minCollateralRatioMantissa",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "originationFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "mantissa",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "originationFeeBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceOracle",
+      "outputs": [
+        {
+          "internalType": "contract ChainLink",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rewardControl",
+      "outputs": [
+        {
+          "internalType": "contract IRewardControl",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "supplyBalances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "principal",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "interestIndex",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405260001960005534801561001657600080fd5b506104be806100266000396000f3fe608060405234801561001057600080fd5b506004361061011b5760003560e01c8063b7adddac116100b2578063bf5bfdfb11610081578063f5c61ce611610066578063f5c61ce614610348578063f851a44014610368578063fc7d42d71461038857600080fd5b8063bf5bfdfb14610336578063e87554461461033f57600080fd5b8063b7adddac146102c9578063b8bb5c4214610310578063be2eafa11461031a578063beb546151461032357600080fd5b80638053fcbe116100ee5780638053fcbe146101c95780638e8f294b146101d3578063a5402544146102b6578063b4eae1cb146102bf57600080fd5b80632630c12f146101205780632c52c7fd1461016a5780635c975abb146101815780637bc332101461019e575b600080fd5b6009546101409073ffffffffffffffffffffffffffffffffffffffff1681565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b61017360065481565b604051908152602001610161565b60125461018e9060ff1681565b6040519015158152602001610161565b6101736101ac36600461041a565b601360209081526000928352604080842090915290825290205481565b6011546101739081565b61024e6101e136600461044d565b600c60205260009081526040902080546001820154600283015460038401546004850154600586015460068701546007880154600889015460099099015460ff90981698969773ffffffffffffffffffffffffffffffffffffffff9687169795969495939492939192168a565b604080519a15158b5260208b019990995273ffffffffffffffffffffffffffffffffffffffff978816988a01989098526060890195909552608088019390935260a087019190915260c086015260e08501526101008401521661012082015261014001610161565b610173600d5481565b600f546101739081565b6102fb6102d736600461041a565b600a6020908152600092835260408084209091529082529020805460019091015482565b60408051928352602083019190915201610161565b6010546101739081565b61017360055481565b61014061033136600461046f565b6103ba565b61017360165481565b61017360155481565b6014546101409073ffffffffffffffffffffffffffffffffffffffff1681565b6007546101409073ffffffffffffffffffffffffffffffffffffffff1681565b6102fb61039636600461041a565b600b6020908152600092835260408084209091529082529020805460019091015482565b600e81815481106103ca57600080fd5b60009182526020909120015473ffffffffffffffffffffffffffffffffffffffff16905081565b803573ffffffffffffffffffffffffffffffffffffffff8116811461041557600080fd5b919050565b6000806040838503121561042d57600080fd5b610436836103f1565b9150610444602084016103f1565b90509250929050565b60006020828403121561045f57600080fd5b610468826103f1565b9392505050565b60006020828403121561048157600080fd5b503591905056fea2646970667358221220cf72bbd633c76da6bf4a794a113aa2176e59eed325baa7dc41b32bd6bb3fc9a564736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061011b5760003560e01c8063b7adddac116100b2578063bf5bfdfb11610081578063f5c61ce611610066578063f5c61ce614610348578063f851a44014610368578063fc7d42d71461038857600080fd5b8063bf5bfdfb14610336578063e87554461461033f57600080fd5b8063b7adddac146102c9578063b8bb5c4214610310578063be2eafa11461031a578063beb546151461032357600080fd5b80638053fcbe116100ee5780638053fcbe146101c95780638e8f294b146101d3578063a5402544146102b6578063b4eae1cb146102bf57600080fd5b80632630c12f146101205780632c52c7fd1461016a5780635c975abb146101815780637bc332101461019e575b600080fd5b6009546101409073ffffffffffffffffffffffffffffffffffffffff1681565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b61017360065481565b604051908152602001610161565b60125461018e9060ff1681565b6040519015158152602001610161565b6101736101ac36600461041a565b601360209081526000928352604080842090915290825290205481565b6011546101739081565b61024e6101e136600461044d565b600c60205260009081526040902080546001820154600283015460038401546004850154600586015460068701546007880154600889015460099099015460ff90981698969773ffffffffffffffffffffffffffffffffffffffff9687169795969495939492939192168a565b604080519a15158b5260208b019990995273ffffffffffffffffffffffffffffffffffffffff978816988a01989098526060890195909552608088019390935260a087019190915260c086015260e08501526101008401521661012082015261014001610161565b610173600d5481565b600f546101739081565b6102fb6102d736600461041a565b600a6020908152600092835260408084209091529082529020805460019091015482565b60408051928352602083019190915201610161565b6010546101739081565b61017360055481565b61014061033136600461046f565b6103ba565b61017360165481565b61017360155481565b6014546101409073ffffffffffffffffffffffffffffffffffffffff1681565b6007546101409073ffffffffffffffffffffffffffffffffffffffff1681565b6102fb61039636600461041a565b600b6020908152600092835260408084209091529082529020805460019091015482565b600e81815481106103ca57600080fd5b60009182526020909120015473ffffffffffffffffffffffffffffffffffffffff16905081565b803573ffffffffffffffffffffffffffffffffffffffff8116811461041557600080fd5b919050565b6000806040838503121561042d57600080fd5b610436836103f1565b9150610444602084016103f1565b90509250929050565b60006020828403121561045f57600080fd5b610468826103f1565b9392505050565b60006020828403121561048157600080fd5b503591905056fea2646970667358221220cf72bbd633c76da6bf4a794a113aa2176e59eed325baa7dc41b32bd6bb3fc9a564736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

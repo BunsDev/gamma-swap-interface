@@ -1,0 +1,64 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ILiquidationStrategy",
+  "sourceName": "contracts/stablecoin/interfaces/ILiquidationStrategy.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralPoolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "positionDebtShare",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "positionCollateralAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "positionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debtShareToBeLiquidated",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxDebtShareToBeLiquidated",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_liquidatorAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralRecipient",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "execute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

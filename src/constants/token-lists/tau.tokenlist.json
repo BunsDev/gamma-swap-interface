@@ -1,0 +1,131 @@
+{
+    "name": "Gamma Tokenlist",
+    "tokens": [
+        {
+            "id": "0",
+            "name": "Wrapped FTM",
+            "address": "",
+            "symbol": "wFTM",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "/images/networks/fantom-network.jpg"
+        },
+        {
+            "id": "1",
+            "name": "Doggy Coin Token",
+            "address": "",
+            "symbol": "DCT",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/R2pCkRq/dct.png"
+        },
+        {
+            "id": "2",
+            "name": "Wallaroo Token",
+            "address": "",
+            "symbol": "WLR",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/8BkkYZF/wlr.png"
+        },
+        {
+            "id": "3",
+            "name": "Maverick Token",
+            "address": "",
+            "symbol": "MAV",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/q5c5NxL/mav.png"
+        },
+        {
+            "id": "4",
+            "name": "Dibs Token",
+            "address": "",
+            "symbol": "DIB",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/3RVSsfs/dib.png"
+        },
+        {
+            "id": "5",
+            "name": "GAMMA Token",
+            "address": "",
+            "symbol": "GAMMA",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/3RVSsfs/dib.png"
+        },
+        {
+            "id": "6",
+            "name": "ibDCT",
+            "address": "",
+            "symbol": "ibDCT",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/1QSdGbL/ibdct.png"
+        },
+        {
+            "id": "7",
+            "name": "ibMAV",
+            "address": "",
+            "symbol": "ibMAV",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/X28x84P/ibmav.png"
+        },
+        {
+            "id": "8",
+            "name": "ibWLR",
+            "address": "",
+            "symbol": "ibWLR",
+            "decimals": 18,
+            "chainId": 4002,
+            "logoURI": "https://i.ibb.co/TWXKmNt/ibwlr.png"
+        },
+        {
+            "id": "9",
+            "name": "Wrapped MATIC",
+            "address": "",
+            "symbol": "wMATIC",
+            "decimals": 18,
+            "chainId": 80001,
+            "logoURI": "https://assets.coingecko.com/coins/images/14073/large/matic.png"
+        },
+        {
+            "id": "10",
+            "name": "Doggy Coin Token",
+            "address": "",
+            "symbol": "DCT",
+            "decimals": 18,
+            "chainId": 80001,
+            "logoURI": "https://i.ibb.co/R2pCkRq/dct.png"
+        },
+        {
+            "id": "11",
+            "name": "Wallaroo Token",
+            "address": "",
+            "symbol": "WLR",
+            "decimals": 18,
+            "chainId": 80001,
+            "logoURI": "https://i.ibb.co/8BkkYZF/wlr.png"
+        },
+        {
+            "id": "12",
+            "name": "Maverick Token",
+            "address": "",
+            "symbol": "MAV",
+            "decimals": 18,
+            "chainId": 80001,
+            "logoURI": "https://i.ibb.co/q5c5NxL/mav.png"
+        },
+        {
+            "id": "13",
+            "name": "Dibs Token",
+            "address": "",
+            "symbol": "DIB",
+            "decimals": 18,
+            "chainId": 80001,
+            "logoURI": "https://i.ibb.co/3RVSsfs/dib.png"
+        }
+    ]
+}

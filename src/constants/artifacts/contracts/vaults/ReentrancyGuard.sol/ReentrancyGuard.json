@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ReentrancyGuard",
+  "sourceName": "contracts/vaults/ReentrancyGuard.sol",
+  "abi": [],
+  "bytecode": "0x60806040526001600055348015601457600080fd5b50603f8060226000396000f3fe6080604052600080fdfea264697066735822122031f15d11ef54305aabb0eccf8cdf5d96be62460f858502bf7510248a96a3338764736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122031f15d11ef54305aabb0eccf8cdf5d96be62460f858502bf7510248a96a3338764736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

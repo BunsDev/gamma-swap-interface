@@ -1,0 +1,22 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PositionHandler",
+  "sourceName": "contracts/stablecoin/managers/PositionHandler.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_bookKeeper",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060405160db38038060db83398181016040526020811015602f57600080fd5b505160408051634d8c928d60e11b815233600482015290516001600160a01b03831691639b19251a91602480830192600092919082900301818387803b158015607757600080fd5b505af1158015608a573d6000803e3d6000fd5b5050505050603f80609c6000396000f3fe6080604052600080fdfea2646970667358221220b689a34561e943d11331608ef7bd5c33c3d1c4b3f5831e72d19cc63bf775817764736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220b689a34561e943d11331608ef7bd5c33c3d1c4b3f5831e72d19cc63bf775817764736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

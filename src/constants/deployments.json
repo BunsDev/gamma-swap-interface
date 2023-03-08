@@ -1,0 +1,144 @@
+{
+    "farms": {
+        "GammaDistributor": "0x279e9476c77694419D777d6F43Cd9943e8d0243A",
+        "GammaVault": "0x180C3Fc99E65D2C863D46F02b5c1204999a6B577"
+    },
+    "swap": {
+        "GammaFactory": "0x54c4f03aC3F498263ac904EDE5F690342687d4ce",
+        "GammaRouter02": "0x7f77AA1F167fb79F46c24Fc9CeAA5Efb4AB8eEfd"
+    },
+    "vault": {
+        "tokens": {
+            "ibDCT": "0x13051b41501d1d04Dfc8fcd1D9D0526ff8aFBC62",
+            "ibMAV": "0xDDd113c64E2880A918EEd5c7404224AEEB8c13DD",
+            "ibWLR": "0x9C80FF2CF36e705ee867EcDD6824b6ca9dE5d3F6",
+            "ibDIB": "0x5e9cE5FE11C531f4072C0120E2eF6d36EE6f62fd"
+        },
+        "Oracle": "0x9348ED2CC8CeD064C42Ab8bb3b602E66D34da307",
+        "ChainLink": "0x2212df2c9314fdb742D4e60ce5d8cf2b3471f92d",
+        "GammaVault": "0x16Dc9838972942CCfaa84D7c80385A798FFbDc2C",
+        "RewardControl": "0xB242DECfc5549d1AC0dDB9633bC9d80f53e963fF",
+        "RateModel": "0x1b39E841216448D44b135b8672Ac8263a5610180"
+    },
+    "tokens": {
+        "wFTM": "0x3d0440A3eA85e120864ae609d1383006A1490786",
+        "DCT": "0x935B30d75F57659CF41Bd868A8032E58Fe53C369",
+        "DIB": "0x4beC7Ad5a195fc04b8eB600d975Fc70fB534d4Fc",
+        "WLR": "0xBc43C5D55d936cA74dB498a123433eb9EcA0882D",
+        "MAV": "0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613",
+        "GAMMA": "0x370f6f309970511b9AfBb15D70550c7d88ADc23d",
+        "mumbai": {
+            "wMATIC": "0x935B30d75F57659CF41Bd868A8032E58Fe53C369",
+            "DCT": "0x4beC7Ad5a195fc04b8eB600d975Fc70fB534d4Fc",
+            "DIB": "0xBc43C5D55d936cA74dB498a123433eb9EcA0882D",
+            "WLR": "0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613",
+            "MAV": "0x370f6f309970511b9AfBb15D70550c7d88ADc23d"
+        }
+    },
+    "bridge": {
+        "Faucet": "0x893d69ba3D7eFF05C7E9E39C45C36060bA7aDc1D",
+        "Bridge_Mumbai": "0x3d0440A3eA85e120864ae609d1383006A1490786",
+        "Bridge_Fantom": "0x5c9e1D7cE8e11Ba767AB2Ecd34712E55fCBb8289"
+    },
+    "misc": {
+        "Multicall2": "0x91eCdf26A91D72ec5cA44A496A422B8036A2B86B"
+    },
+    "pairs": {
+        "0x3d0440A3eA85e120864ae609d1383006A1490786-0x935B30d75F57659CF41Bd868A8032E58Fe53C369": {
+            "id": 3,
+            "tokenA": "wFTM",
+            "tokenB": "DCT",
+            "pairAddress": "0xdac7747464B3C4407f867feFFDD1094b45F4d3e1"
+        },
+        "0x935B30d75F57659CF41Bd868A8032E58Fe53C369-0x3d0440A3eA85e120864ae609d1383006A1490786": {
+            "id": 3,
+            "tokenA": "DCT",
+            "tokenB": "wFTM",
+            "pairAddress": "0xdac7747464B3C4407f867feFFDD1094b45F4d3e1"
+        },
+        "0x3d0440A3eA85e120864ae609d1383006A1490786-0xBc43C5D55d936cA74dB498a123433eb9EcA0882D": {
+            "id": 9,
+            "tokenA": "wFTM",
+            "tokenB": "WLR",
+            "pairAddress": "0x070716d7d94A45Eb5E9530949BDAD2b763cd912D"
+        },
+        "0xBc43C5D55d936cA74dB498a123433eb9EcA0882D-0x3d0440A3eA85e120864ae609d1383006A1490786": {
+            "id": 9,
+            "tokenA": "WLR",
+            "tokenB": "wFTM",
+            "pairAddress": "0x070716d7d94A45Eb5E9530949BDAD2b763cd912D"
+        },
+        "0x3d0440A3eA85e120864ae609d1383006A1490786-0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613": {
+            "id": 12,
+            "tokenA": "wFTM",
+            "tokenB": "MAV",
+            "pairAddress": "0xBa1462cbc3077EE35e955a78A4684a2AF7dC2ABe"
+        },
+        "0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613-0x3d0440A3eA85e120864ae609d1383006A1490786": {
+            "id": 12,
+            "tokenA": "MAV",
+            "tokenB": "wFTM",
+            "pairAddress": "0xBa1462cbc3077EE35e955a78A4684a2AF7dC2ABe"
+        },
+        "0x935B30d75F57659CF41Bd868A8032E58Fe53C369-0x4beC7Ad5a195fc04b8eB600d975Fc70fB534d4Fc": {
+            "id": 7,
+            "tokenA": "DCT",
+            "tokenB": "DIB",
+            "pairAddress": "0xC3fe0f555c1050Bd35b5063f4DF9E97c5891dDCF"
+        },
+        "0x4beC7Ad5a195fc04b8eB600d975Fc70fB534d4Fc-0x935B30d75F57659CF41Bd868A8032E58Fe53C369": {
+            "id": 7,
+            "tokenA": "DIB",
+            "tokenB": "DCT",
+            "pairAddress": "0xC3fe0f555c1050Bd35b5063f4DF9E97c5891dDCF"
+        },
+        "0x935B30d75F57659CF41Bd868A8032E58Fe53C369-0xBc43C5D55d936cA74dB498a123433eb9EcA0882D": {
+            "id": 10,
+            "tokenA": "DCT",
+            "tokenB": "WLR",
+            "pairAddress": "0xf943bF7FaF237E460adffF85b642Df7C39e1Cf71"
+        },
+        "0xBc43C5D55d936cA74dB498a123433eb9EcA0882D-0x935B30d75F57659CF41Bd868A8032E58Fe53C369": {
+            "id": 10,
+            "tokenA": "WLR",
+            "tokenB": "DCT",
+            "pairAddress": "0xf943bF7FaF237E460adffF85b642Df7C39e1Cf71"
+        },
+        "0x935B30d75F57659CF41Bd868A8032E58Fe53C369-0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613": {
+            "id": 13,
+            "tokenA": "DCT",
+            "tokenB": "MAV",
+            "pairAddress": "0x6D3E824D3Ef7eE706324eFdB199209a7A7AdDdFe"
+        },
+        "0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613-0x935B30d75F57659CF41Bd868A8032E58Fe53C369": {
+            "id": 13,
+            "tokenA": "MAV",
+            "tokenB": "DCT",
+            "pairAddress": "0x6D3E824D3Ef7eE706324eFdB199209a7A7AdDdFe"
+        },
+        "0x4beC7Ad5a195fc04b8eB600d975Fc70fB534d4Fc-0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613": {
+            "id": 14,
+            "tokenA": "DIB",
+            "tokenB": "MAV",
+            "pairAddress": "0xC20dd02FE4acfBBcbaE64F72939Ab50Fc8f24CFA"
+        },
+        "0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613-0x4beC7Ad5a195fc04b8eB600d975Fc70fB534d4Fc": {
+            "id": 14,
+            "tokenA": "MAV",
+            "tokenB": "DIB",
+            "pairAddress": "0xC20dd02FE4acfBBcbaE64F72939Ab50Fc8f24CFA"
+        },
+        "0xBc43C5D55d936cA74dB498a123433eb9EcA0882D-0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613": {
+            "id": 15,
+            "tokenA": "WLR",
+            "tokenB": "MAV",
+            "pairAddress": "0x6eA94f53A2f95b48F9A6bDbcD082bBf5700de853"
+        },
+        "0xf0BB8e57747b9C06b204Be6bb1Ce066F4611B613-0xBc43C5D55d936cA74dB498a123433eb9EcA0882D": {
+            "id": 15,
+            "tokenA": "MAV",
+            "tokenB": "WLR",
+            "pairAddress": "0x6eA94f53A2f95b48F9A6bDbcD082bBf5700de853"
+        }
+    }
+}
