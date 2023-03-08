@@ -1,5 +1,11 @@
 # Gamma
 
+# Demo
+
+* [Website](https://gamma-fantom.vercel.app/)
+* [Demo video](https://youtu.be/7jS80-Zq95E)
+
+
 # What is Gamma?
 
 Gamma introduces a next-gen decentralized exchange providing liquidity, an auto-farming stablecoin, and enabling peer-to-peer transactions on the Fantom network. 
